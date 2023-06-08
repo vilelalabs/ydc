@@ -1,6 +1,7 @@
 from pytube import YouTube
 import os
 import glob
+import time
 from moviepy.editor import *
 
 # --- get url from user
@@ -29,9 +30,24 @@ for i, filename in enumerate(glob.glob('*.mp4')):
     # write with same name but .mp3 extension
     clip.audio.write_audiofile('{}.mp3'.format(filename[:-4]))
 
+# release .mp4 files
+clip.reader.close()
+clip.audio.reader.close_proc()
+
+
 # -- delete mp4 files
+def delete_file(filename):
+    while True:
+        try:
+            os.remove(filename)
+            break  # File has been successfully deleted
+        except PermissionError:
+            # File is still in use, wait for a while and try again
+            print(f"Trying to delete {filename} ...")
+            time.sleep(1)  # Wait for 1 second
+
 for i, filename in enumerate(glob.glob('*.mp4')):
-    os.remove(filename)
+    delete_file(filename)
 
 
 # example video >> https://youtu.be/rUWxSEwctFU
