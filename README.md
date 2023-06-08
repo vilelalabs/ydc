@@ -3,12 +3,15 @@
 ## Description
 This is a simple script to download and convert youtube videos to mp3.
 
-## Requirements
-before install moviepy, follow the instructions in this link: [moviepy requirements](https://zulko.github.io/moviepy/install.html)
-Then, install the following packages:
+## Fast install & run
+```bash
+git clone
+cd ydc
+pip install -r requirements.txt
+python3 ydc.py
 ```
-pip install pytube moviepy glob
-```
+---
+
 ## Usage
 Run in CLI:
 
@@ -32,3 +35,12 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - [ ] Try to a progress bar during the video download
 - [ ] Add GUI
 - [ ] Integrate with [audio-music-divider](https://github.com/vilelalabs/audio-music-divider) in same (third) application
+
+---
+
+## Requirements (if "fast" commands isn't enough to work)
+before install moviepy, follow the instructions in this link: [moviepy requirements](https://zulko.github.io/moviepy/install.html)
+Then, install the following packages:
+```
+pip install pytube moviepy glob
+```
