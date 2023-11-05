@@ -27,7 +27,7 @@ Paste the url and press enter. The video will be downloaded and converted to mp3
 
 _P.S.1 > If the file is big, it can take really a lot of time, be patient with you blank shell!_
 
-_P.S.2 > If you have doubt about downloading, check file size in the directory, if it is increasing, it is downloading._
+_P.S.2 > If you have doubt about downloading, check file size in the directory, if it is increasing (between some minutes, usually from 1min to 5 min), it is downloading, again, be patient._
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
