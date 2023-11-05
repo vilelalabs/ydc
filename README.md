@@ -23,7 +23,11 @@ A prompt will ask you for youtube video url.
 ```bash
 Enter the url of the video you want to download: 
 ```
-Paste the url and press enter. The video will be downloaded (if file is big can take a lot of time, *be patient with you blank shell!*) and converted to mp3. The mp3 file will be saved in the same directory as the script with the name music1.mp3
+Paste the url and press enter. The video will be downloaded and converted to mp3. The mp3 file will be saved in the same directory as the script with the name music1.mp3.
+
+_P.S.1 > If the file is big, it can take really a lot of time, be patient with you blank shell!_
+
+_P.S.2 > If you have doubt about downloading, check file size in the directory, if it is increasing, it is downloading._
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
