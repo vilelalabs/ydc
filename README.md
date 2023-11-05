@@ -7,6 +7,7 @@ This is a simple script to download and convert youtube videos to mp3.
 ```bash
 git clone
 cd ydc
+source venv/bin/activate # on Linux, for Windows: venv\Scripts\activate.bat
 pip install -r requirements.txt
 python3 ydc.py
 ```
